@@ -3,7 +3,7 @@
 FROM mcr.microsoft.com/playwright:v1.53.1-noble
 
 # List all the browsers including those that are included by default
-RUN npx @playwright/test@1.53.1 install --with-deps chromium msedge msedge-beta
+RUN npx @playwright/test@1.53.1 install --with-deps chrome chromium msedge msedge-beta
 
 # Keep 3 commands in one RUN to save space in the image. rm -rf also cleans up the cache
 # Re-set root around apt-get
