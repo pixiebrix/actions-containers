@@ -19,7 +19,7 @@ jobs:
 The browsers are automatically updated every 3 days. Playwright must be updated manually since it has to match here and in the monorepo.
 
 1. Here: Update the version anywhere it appears in the Dockerfile
-  - a new tag will be created, the old one will continue working but it won't receive browser updates
+    - a new tag will be created, the old one will continue working but it won't receive browser updates
 3. Monorepo: Update the version both in package.json in the workflow
 
 ## Documentation
