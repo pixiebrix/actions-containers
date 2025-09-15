@@ -9,6 +9,6 @@ RUN npx @playwright/test@1.53.1 install --with-deps chromium msedge msedge-beta
 # Re-set root around apt-get
 USER root
 RUN apt-get update && \
-    apt-get install -y libxmlsec1 libxmlsec1-dev libxml2 pkg-config lsb-release && \
+    apt-get install -y libxmlsec1 libxmlsec1-dev libxml2 pkg-config lsb-release python3-pip && \
     rm -rf /var/lib/apt/lists/*
 USER 1001
